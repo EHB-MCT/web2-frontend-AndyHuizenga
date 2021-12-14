@@ -1,0 +1,176 @@
+body {
+    background-image: url("./backgroundi.png");
+    color: white;
+    font-family: Helvetica;
+    background-size: cover;
+    background-image: blur(255px);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.nav_main a {
+    text-decoration: none;
+    color: white;
+    padding: 3em 5em 3em;
+
+}
+
+.nav_main {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#logo {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+
+/*welcoming page*/
+
+#welcome_section {
+    margin-bottom: 2em;
+}
+
+
+
+#cocktailoftheweekIMG {
+    height: 38em;
+    position: relative;
+    top: -10em;
+    left: 20%;
+    z-index: -1;
+}
+
+#Name_cocktailOTW {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#crown {
+    height: 2em;
+    position: relative;
+
+}
+
+img#crown {
+    top: -18px;
+    position: relative;
+    left: -18px;
+
+}
+
+#welcome_section p {
+    margin-bottom: 0;
+}
+
+#cocktailoftheweek {
+    position: relative;
+    bottom: -30px;
+}
+
+
+/*Match maker*/
+
+#Matcher_section {
+    text-align: center;
+}
+
+#Matcher_section h1 {
+    font-variant-caps: all-small-caps;
+    font-size: 5em;
+    line-height: px;
+}
+
+#Matcher_section h2 {
+    color: orange;
+    font-variant-caps: all-small-caps;
+
+}
+
+h1 {
+    line-height: px;
+    margin-bottom: 0px m !important;
+    padding: 0px;
+}
+
+.ingredient_type {
+    padding: 10px 5px;
+    width: 12em;
+    margin: 2em auto 2em 0;
+    background-color: white;
+    color: black;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 7px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0px 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+
+    /* this adds the "card" effect */
+    padding: 16px;
+    background-color: transparent;
+
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card__thumb img {
+    display: block;
+    width: 100%;
+}
+
+#add_button {
+    background-color: orange;
+    border-style: none;
+    color: white;
+    width: 4em;
+    position: absolute;
+    right: 10px;
+    bottom: 18px;
+}
+
+.card_content {
+    text-align: left;
+    float: left;
+    color: white;
+    ;
+}
