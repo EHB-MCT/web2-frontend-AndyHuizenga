@@ -11,21 +11,24 @@ p {
     padding: 0;
 }
 
-.nav_main a {
+#header_el {
+
     text-decoration: none;
     color: white;
-    padding: 3em 5em 3em;
+    padding: 3em 5% 3em;
 
 }
 
 .nav_main {
     text-align: center;
     margin-top: 1em;
+    vertical-align: sub;
 }
 
 #logo {
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 5em;
+    margin-right: 5em;
+
 }
 
 
@@ -173,4 +176,68 @@ body {
     float: left;
     color: white;
     ;
+}
+
+/* about page*/
+
+.column2 {
+    float: left;
+    width: 30.0%;
+    height: 300px;
+
+
+    /* Should be removed. Only for demonstration */
+}
+
+.line {
+    float: left;
+    width: 20.0%;
+    height: 300px;
+
+    /* Should be removed. Only for demonstration */
+}
+
+.row2 {
+    margin: 4em 15%;
+
+
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+#about_content {
+    margin: 10% 15% auto 14%;
+    width: 1300px;
+}
+
+/* Float wrappers */
+#about_content>div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    height: 227px;
+}
+
+#float-right {
+    border-left: solid 2px white;
+    padding-left: 130px;
+    margin-left: 20px;
+}
+
+
+
+#about_content h1 {
+    margin-bottom: 20px;
 }
