@@ -3,13 +3,14 @@ body {
     color: white;
     font-family: Helvetica;
     background-size: cover;
-    background-image: blur(255px);
+
 }
 
 p {
     margin: 0;
     padding: 0;
 }
+
 
 #header_el {
 
@@ -241,3 +242,46 @@ body {
 #about_content h1 {
     margin-bottom: 20px;
 }
+
+
+#allDrinks {
+    margin-top: 50px;
+}
+
+/* Create four equal columns that floats next to each other */
+#column4 {
+    border: 1px solid red;
+    background-color: red;
+    width: 20%;
+    padding: 10px;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.row4>div {
+    border: 1px solid red;
+    background-color: none;
+    width: 20%;
+    padding: 10px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#imageDrinkSquare {}
