@@ -86,7 +86,7 @@ function buildList() {
 }
 
 function uploadFavoriteDrinks(drink) {
-    const url = 'https://reqres.in/api/users';
+    const url = 'https://web2-courseproject-andyh.herokuapp.com/favoriteDrinks';
     // post body data 
     const newFavDrink = {
 
@@ -118,7 +118,7 @@ function uploadFavoriteDrinks(drink) {
     fetch(url, options)
         .then(res => res.json())
         .then(res => console.log(res));
-
+    console.log("favoriteAdded")
 
 
 }
