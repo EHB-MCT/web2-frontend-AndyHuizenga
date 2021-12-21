@@ -265,11 +265,11 @@ body {
 }
 
 #row4>div {
-    border: 1px solid red;
+
     background-color: none;
     width: 265px;
     padding: 10px;
-    height: 400px;
+    height: 450px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
@@ -281,4 +281,9 @@ body {
     max-height: 100%;
     display: block;
     /* remove extra space below image */
+}
+
+#ingredientImg {
+    width: 60px;
+    margin-top: 10px;
 }
