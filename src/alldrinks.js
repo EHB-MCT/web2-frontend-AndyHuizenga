@@ -77,7 +77,7 @@ function buildList() {
             let id = event.target.id;
             console.log("ID of the drink", id)
             let addToFav = listAllDrinks.find(drink => drink.idDrink == id);
-            //Add the pokemon to the team
+            //Add the favoriteDrink to the Array of drinks and start Fetch post
             favoriteDrinks.push(addToFav);
             uploadFavoriteDrinks(addToFav);
             console.log("Array with favoriteDrinks", favoriteDrinks)

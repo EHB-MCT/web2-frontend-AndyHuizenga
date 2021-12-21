@@ -287,3 +287,101 @@ body {
     width: 60px;
     margin-top: 10px;
 }
+
+
+
+/* =================================================================
+
+FAVORITE
+
+ =================================================================*/
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+
+    /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+    flex-flow: row wrap;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 33%;
+    height: 250px;
+    margin-top: 50px;
+    color: white;
+
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+
+}
+
+
+
+#favoriteThumb {
+    max-height: 20%;
+    display: block;
+    /* remove extra space below image */
+}
+
+/* colum2*/
+
+#row4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#ingredients4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#ingredients4>div {
+
+    background-color: red;
+    width: 50%;
+
+}
+
+#all1in4 {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#optionsFav {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#optionsEl {
+
+    background-color: red;
+    width: 100%;
+    align-items: center;
+
+}
+
+#centerOptions {
+    text-align: center;
+}
