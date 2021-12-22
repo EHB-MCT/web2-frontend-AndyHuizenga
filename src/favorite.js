@@ -81,7 +81,7 @@ function buildList() {
     </div>
     <div class="flex-item" id="centerOptions">
       <button  id="optionsEl">STEPS</button> 
-      <button  id="optionsEl">TRIED</button> 
+      <button  onclick="drinkTried(${drink.id})" id="optionsEl">${drink.timesTried}<img width="30px" src="./images/icons/cocktail.png"</img></button> 
       <button onclick="deleteDrink(${drink.id})" id="optionsEl"> DELETE </button>
     </div>
     </div> `
@@ -90,17 +90,11 @@ function buildList() {
 }
 
 
-
 function deleteDrink(id) {
 
-    console.log("hello", id);
     let deleteDrink = listAllDrinks.find(drink => drink.id == id)
-    console.log("before", listAllDrinks.length, deleteDrink)
-    console.log("info", deleteDrink.id)
     let newarray = listAllDrinks.filter(drink => drink.id != deleteDrink.id)
-    console.log("gone", newarray.length)
     listAllDrinks = newarray;
-    console.log("update", listAllDrinks.length)
     let dbID = deleteDrink._id
     buildList()
 
@@ -119,6 +113,60 @@ function deleteDrink(id) {
             throw (error);
         })
 
+}
+
+
+function drinkTried(id) {
+
+    //put info 
+    let triedOne = listAllDrinks.find(drink => drink.id == id)
+    let amount = triedOne.timesTried;
+    newAmount = amount + 1;
+    let dbID = triedOne._id
+
+    //updatearray
+    console.log("beforeNewArray", listAllDrinks.length)
+    let newarray = listAllDrinks.filter(drink => drink.id != triedOne.id)
+    console.log("afterNewArray", newarray.length)
+    listAllDrinks = newarray;
+
+    const data = {
+        name: triedOne.name,
+        ingredient1: triedOne.ingredient1,
+        ingredient2: triedOne.ingredient2,
+        ingredient3: triedOne.ingredient3,
+        img: triedOne.img,
+        amount1: triedOne.amount1,
+        amount2: triedOne.amount2,
+        amount3: triedOne.amount3,
+        instruction: triedOne.instruction,
+        timesTried: newAmount,
+        id: triedOne.id,
+
+    }
+    console.log("data", data)
+    console.log("first1", listAllDrinks.length)
+    listAllDrinks.push(data)
+    console.log("first2", listAllDrinks.length)
+
+    console.log("data", data)
+
+    alert("Succesfully")
+    const putMethod = {
+        method: 'PUT', // Method itself
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8' // Indicates the content 
+        },
+        body: JSON.stringify(data) // We send data in JSON format
+    }
+
+    let url = "https://web2-courseproject-andyh.herokuapp.com/favoriteDrinks/"
+    // // make the HTTP put request using fetch api
+    fetch(url + dbID, putMethod)
+        .then(response => response.json())
+        .then(data => buildList()) // Manipulate the data retrieved back, if we want to do something with it
+        .catch(err => console.log(err)) // Do something with the error
+    // 
 
 
 }
