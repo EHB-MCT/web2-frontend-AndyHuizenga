@@ -30,6 +30,7 @@ async function getData(onlyThisletter) {
 
     const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?f=${onlyThisletter}`)
     const data = await response.json();
+    console.log("data", data)
     list = data.drinks;
 
     console.log("hello", list);
@@ -117,8 +118,27 @@ function uploadFavoriteDrinks(drink) {
     // send POST request
     fetch(url, options)
         .then(res => res.json())
-        .then(res => console.log(res));
+        .then(res => console.log(res.name));
     console.log("favoriteAdded")
 
 
 }
+
+
+// document.querySelectorAll('.btn-tried').forEach(item => {
+//     item.addEventListener('click', event => {
+//         //Get the id of the clicked item
+//         let id = event.target.id;
+//         console.log("step1", id)
+
+//     });
+
+//     const putMethod = {
+//         method: 'PUT', // Method itself
+//         headers: {
+//             'Content-type': 'application/json; charset=UTF-8' // Indicates the content 
+//         },
+//         body: JSON.stringify(drinktochange) // We send data in JSON format
+//     }
+
+//     // make the HTTP put request using fetch api

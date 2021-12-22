@@ -95,15 +95,9 @@ function deleteDrink(id) {
 
     console.log("hello", id);
     let deleteDrink = listAllDrinks.find(drink => drink.id == id)
-    console.log("before", listAllDrinks.length, deleteDrink)
-    console.log("info", deleteDrink.id)
-    let newarray = listAllDrinks.filter(drink => drink.id != deleteDrink.id)
-    console.log("gone", newarray.length)
-    listAllDrinks = newarray;
-    console.log("update", listAllDrinks.length)
+    console.log(deleteDrink)
     let dbID = deleteDrink._id
-    buildList()
-
+    console.log(dbID)
 
     let url = "https://web2-courseproject-andyh.herokuapp.com/favoriteDrinks/"
 
@@ -111,14 +105,6 @@ function deleteDrink(id) {
             method: 'DELETE',
         })
         .then(res => res.json()) // or res.json()
-        .then(function render() {
-            alert("Succesfully deleted")
-
-        })
-        .catch(error => {
-            throw (error);
-        })
-
-
+        .then(res => console.log(res))
 
 }
