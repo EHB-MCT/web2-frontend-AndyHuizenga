@@ -200,41 +200,31 @@ h1 {
 
 /* about page*/
 
-.column2 {
-    float: left;
-    width: 30.0%;
-    height: 300px;
 
+.aboutHolder {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 
-    /* Should be removed. Only for demonstration */
+    align-items: center;
 }
 
-.line {
-    float: left;
-    width: 20.0%;
-    height: 300px;
-
-    /* Should be removed. Only for demonstration */
+.aboutHolder>div {
+    width: 450px;
+    padding-right: 20px;
+    padding-left: 80px;
 }
 
-.row2 {
-    margin: 4em 15%;
-
+.aboutInfoL {
+    border-right: solid white 2px;
+    height: 276px;
 
 }
 
-.row2:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
+.aboutInfoR {
+    height: 276px;
 }
 
 #about_content {
