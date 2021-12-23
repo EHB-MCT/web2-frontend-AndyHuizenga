@@ -60,14 +60,14 @@ function buildList() {
     listAllDrinks.forEach(drink => {
         html += `   <div>
                         <h2>${drink.strDrink}</h2>
-                     <img id='oneDrinkImg'src="${drink.strDrinkThumb}" alt="">
-                        <img id="ingredientImg" src = "https://www.thecocktaildb.com/images/ingredients/${drink.strIngredient1}-Small.png" alt = "">
-                        <span> ${drink.strIngredient1}</span>
-                        <span>${drink.strMeasure1}</span> <br>
-                        <img id="ingredientImg" src = "https://www.thecocktaildb.com/images/ingredients/${drink.strIngredient2}-Small.png" alt = "">
-                        <span> ${drink.strIngredient2}</span>
-                        <span>${drink.strMeasure2}</span>
-                        <a href="#" id="${drink.idDrink}" class="btn btn-primary">+</a>
+                    <div class="addHolder"><img id='oneDrinkImg'src="${drink.strDrinkThumb}" alt="">
+                             <btn href="#" id="${drink.idDrink}" class="btn">+</btn>
+                             </div>
+                             <div class="ingredientShow">
+                             <img id="ingredientImg" src = "https://www.thecocktaildb.com/images/ingredients/${drink.strIngredient1}-Small.png" alt = "">
+                        <span> ${drink.strIngredient1}</span></div>
+                             <div class="ingredientShow">  <img id="ingredientImg" src = "https://www.thecocktaildb.com/images/ingredients/${drink.strIngredient2}-Small.png" alt = "">
+                        <span> ${drink.strIngredient2}</span></div>
                     </div>`
     })
     document.getElementById('row4').innerHTML = html;

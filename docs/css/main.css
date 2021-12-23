@@ -11,6 +11,10 @@ p {
     padding: 0;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 #header_el {
 
@@ -32,20 +36,28 @@ p {
 
 }
 
+.card>img {
+    width: 60%;
+    height: 60%;
+}
+
 
 /*welcoming page*/
 
 #welcome_section {
     margin-bottom: 2em;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
 
 #cocktailoftheweekIMG {
-    height: 38em;
+    height: 35em;
     position: relative;
-    top: -10em;
-    left: 20%;
+    top: -15em;
+    left: 22%;
     z-index: -1;
 }
 
@@ -111,28 +123,13 @@ h1 {
     color: black;
 }
 
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-    float: left;
-    width: 20%;
-    padding: 0 7px;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
 .row {
-    margin: 0px 5px;
+    margin: auto;
+    justify-content: center;
+    width: 80%;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
@@ -142,19 +139,19 @@ body {
 /* Style the counter cards */
 .card {
 
+    width: 180px;
+    height: 220px;
     /* this adds the "card" effect */
-    padding: 16px;
+    border: 0px solid;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: transparent;
+    justify-content: space-between;
 
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
+.card img {
+    width: 100%;
 }
 
 .card__thumb img {
@@ -162,22 +159,44 @@ body {
     width: 100%;
 }
 
-#add_button {
+/* #add_button {
     background-color: orange;
     border-style: none;
     color: white;
     width: 4em;
-    position: absolute;
-    right: 10px;
-    bottom: 18px;
+
+} */
+
+#add_button {
+
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
 }
 
 .card_content {
-    text-align: left;
-    float: left;
-    color: white;
-    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
+.card_content>div {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* about page*/
 
@@ -243,9 +262,12 @@ body {
     margin-bottom: 20px;
 }
 
+/* =================================================================
+                                all drinks 
+================================================================*/
 
 #allDrinks {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
@@ -269,10 +291,17 @@ body {
     background-color: none;
     width: 265px;
     padding: 10px;
-    height: 450px;
+    height: 550px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+}
+
+.ingredientShow {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 #oneDrinkImg {
@@ -283,8 +312,8 @@ body {
 }
 
 #ingredientImg {
-    width: 60px;
-    margin-top: 10px;
+    width: 80px;
+
 }
 
 
@@ -456,4 +485,41 @@ contact
     position: fixed;
     align-items: center;
     justify-content: center;
+}
+
+#headerAllDrinks {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+#headerAllDrinks>div {
+    background-color: none;
+    width: 50%;
+}
+
+#filterElements {
+    text-align: right;
+}
+
+h3 {
+    font-size: 4em;
+}
+
+.addHolder {
+    position: relative;
+}
+
+.btn {
+
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border-radius: 30px;
+    right: 10px;
+    top: 10px;
+
 }

@@ -106,7 +106,7 @@ function deleteDrink(id) {
         })
         .then(res => res.json()) // or res.json()
         .then(function render() {
-            alert("Succesfully deleted")
+            alert(`Succesfully deleted the drink ${drink.name} out of your favorite drinks`)
 
         })
         .catch(error => {
@@ -151,7 +151,7 @@ function drinkTried(id) {
 
     console.log("data", data)
 
-    alert("Succesfully")
+    alert(`You made the drink called ${data.name}.You have drinked it ${data.timesTried} times now!`)
     const putMethod = {
         method: 'PUT', // Method itself
         headers: {
