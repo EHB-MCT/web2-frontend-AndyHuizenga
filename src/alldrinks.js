@@ -1,6 +1,3 @@
-import _ from 'lodash';
-
-
 let listAllDrinks = [];
 let favoriteDrinks = [];
 let onlyThisletter = "a";
@@ -149,4 +146,3 @@ function uploadFavoriteDrinks(drink) {
 //     }
 
 //     // make the HTTP put request using fetch api
-
