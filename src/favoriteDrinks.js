@@ -72,8 +72,8 @@ function buildList() {
                 src = "https://www.thecocktaildb.com/images/ingredients/${drink.ingredient4}-Small.png"
                 alt = "" >
                 <div>
-                  <span>${drink.ingredient4}</span><br>
-                    <span>${drink.amount4}</span>
+                  <span></span><br>
+                    <span></span>
                 </div>
             </div>
             
@@ -167,6 +167,6 @@ function drinkTried(id) {
         .then(data => buildList()) // Manipulate the data retrieved back, if we want to do something with it
         .catch(err => console.log(err)) // Do something with the error
     //
-    
+
 
 }
