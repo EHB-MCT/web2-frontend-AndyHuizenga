@@ -11,19 +11,7 @@ module.exports = {
         filename: '[name].js'
     },
     mode: 'development',
-
-    devServer: {
-
-        host: '0.0.0.0',
-
-        publicPath: '/docs/',
-
-        contentBase: path.resolve(__dirname, "../scr"),
-
-        watchContentBase: true,
-        compress: true,
-        port: 9001
-
-    }
+    watch: true
 
 }
+

@@ -1,3 +1,6 @@
+import _ from 'lodash';
+
+
 let listAllDrinks = [];
 let favoriteDrinks = [];
 let onlyThisletter = "a";
