@@ -28,6 +28,7 @@
   "homepage": "https://github.com/EHB-MCT/web2-frontend-AndyHuizenga#readme",
   "description": "",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "webpack-dev-server": "^4.7.1"
   }
 }
