@@ -8,7 +8,7 @@
   },
   "name": "web2-frontend-andyhuizenga",
   "version": "1.0.0",
-  "main": "webpack.config.js",
+  "main": "allDrinks.js",
   "directories": {
     "doc": "docs"
   },
