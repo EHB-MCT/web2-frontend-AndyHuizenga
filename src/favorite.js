@@ -151,7 +151,7 @@ function drinkTried(id) {
 
     console.log("data", data)
 
-    alert(`You made the drink called ${data.name}.You have drinked it ${data.timesTried} times now!`)
+    alert(`You made the drink called ${data.name}.You have drank it already ${data.timesTried} times now!`)
     const putMethod = {
         method: 'PUT', // Method itself
         headers: {
@@ -166,7 +166,11 @@ function drinkTried(id) {
         .then(response => response.json())
         .then(data => buildList()) // Manipulate the data retrieved back, if we want to do something with it
         .catch(err => console.log(err)) // Do something with the error
-    // 
+    //
+    
+    
+
+
 
 
 }

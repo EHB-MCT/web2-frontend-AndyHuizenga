@@ -1,7 +1,12 @@
+@import "../css/favorite.css";
+@import "../css/contact.css";
+@import "../css/about.css";
+@import "../css/alldrinks.css";
+
 body {
     background-image: url("../images/basic/backgroundi.png");
     color: white;
-    font-family: Helvetica;
+
     background-size: cover;
 
 }
@@ -20,21 +25,25 @@ body {
 
     text-decoration: none;
     color: white;
-    padding: 3em 5% 3em;
 
 }
 
-.nav_main {
-    text-align: center;
-    margin-top: 1em;
-    vertical-align: sub;
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
 }
 
-#logo {
-    margin-left: 7%;
-    margin-right: 7%;
 
-}
+
+
 
 .card>img {
     width: 60%;
@@ -83,6 +92,7 @@ img#crown {
 
 #welcome_section p {
     margin-bottom: 0;
+
 }
 
 #cocktailoftheweek {
@@ -95,6 +105,7 @@ img#crown {
 
 #Matcher_section {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 #Matcher_section h1 {
@@ -188,328 +199,13 @@ h1 {
     text-align: left;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* about page*/
-
-
-.aboutHolder {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-
-    align-items: center;
-}
-
-.aboutHolder>div {
-    width: 450px;
-    padding-right: 20px;
-    padding-left: 80px;
-}
-
-.aboutInfoL {
-    border-right: solid white 2px;
-    height: 276px;
-
-}
-
-.aboutInfoR {
-    height: 276px;
-}
-
-#about_content {
-    margin: 10% 15% auto 14%;
-    width: 1300px;
-}
-
-/* Float wrappers */
-#about_content>div {
-    display: inline-block;
-    vertical-align: middle;
-    width: 40%;
-    height: 227px;
-}
-
-#float-right {
-    border-left: solid 2px white;
-    padding-left: 130px;
-    margin-left: 20px;
-}
-
-
-
-#about_content h1 {
-    margin-bottom: 20px;
-}
-
-/* =================================================================
-                                all drinks 
-================================================================*/
-
-#allDrinks {
-    margin-top: 30px;
-}
-
-
-#row4:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#row4 {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-
-
-}
-
-#row4>div {
-
-    background-color: none;
-    width: 265px;
-    padding: 10px;
-    height: 550px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-}
-
-.ingredientShow {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-#oneDrinkImg {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    /* remove extra space below image */
-}
-
-#ingredientImg {
-    width: 80px;
-
-}
-
-
-
-/* =================================================================
-
-FAVORITE
-
- =================================================================*/
-
-.flex-container {
-    /* We first create a flex layout context */
-    display: flex;
-
-    /* Then we define the flow direction 
-     and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
-    flex-flow: row wrap;
-
-    /* Then we define how is distributed the remaining space */
-    justify-content: space-around;
-
-    padding: 0;
-    margin-top: 30px;
-    list-style: none;
-}
-
-.flex-item {
-
-    padding: 5px;
-    width: 33%;
-    height: 250px;
-    margin-top: 50px;
-    color: white;
-
-    display: flex;
-    vertical-align: center;
-    align-items: center;
-
-}
-
-
-
-#favoriteThumb {
-    max-height: 20%;
-    display: block;
-    /* remove extra space below image */
-}
-
-/* colum2*/
-
-#row4:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#ingredients4 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-
-#ingredients4>div {
-
-
-    width: 50%;
-
-}
-
-#all1in4 {
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#optionsFav {
-    display: flex;
-    justify-content: center;
-
-}
-
-
-#centerOptions>button {
-
-    border: none;
-    width: 100%;
-    align-items: center;
-    background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
-    color: white;
-
-}
-
-#centerOptions {
-    text-align: center;
-}
-
-#spanName {
+#comingSoon {
+    background-color: orange;
+    width: 30%;
+    padding: 20px;
+    opacity: 80%;
+    font-size: 1em;
     position: absolute;
-    z-index: 1;
-
-}
-
-#favouriteThumb {
-    z-index: -1;
-    position: relative;
-}
-
-.imgHolder {
-    position: relative;
-
-}
-
-.imgHolder span {
-    position: absolute;
-    left: 25%;
-    top: -45px;
-    font-size: 3em;
-}
-
-
-/* =================================================================
-
-contact
-
- =================================================================*/
-
-#contactContainer:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#contactContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
-
-#contactContainer>div {
-    background-color: none;
-    width: 50%;
-}
-
-#contactImg {
-    float: right;
-}
-
-#contactText {
-    padding-left: 50px;
-}
-
-
-.containermiddle {
-
-    width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-}
-
-#headerAllDrinks {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: auto;
-}
-
-#headerAllDrinks>div {
-    background-color: none;
-    width: 50%;
-}
-
-#filterElements {
-    text-align: right;
-}
-
-h3 {
-    font-size: 4em;
-}
-
-.addHolder {
-    position: relative;
-}
-
-.btn {
-
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    border-radius: 30px;
-    right: 10px;
-    top: 10px;
-
+    left: 35%;
+    bottom: -100%;
 }

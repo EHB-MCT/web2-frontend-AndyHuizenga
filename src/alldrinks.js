@@ -80,6 +80,7 @@ function buildList() {
             let addToFav = listAllDrinks.find(drink => drink.idDrink == id);
             //Add the favoriteDrink to the Array of drinks and start Fetch post
             favoriteDrinks.push(addToFav);
+
             uploadFavoriteDrinks(addToFav);
             console.log("Array with favoriteDrinks", favoriteDrinks)
         });
@@ -118,11 +119,14 @@ function uploadFavoriteDrinks(drink) {
     // send POST request
     fetch(url, options)
         .then(res => res.json())
-        .then(res => console.log(res.name));
-    console.log("favoriteAdded")
+        .then(res => alert(`Succesfully added the drink ${newFavDrink.name} in favorites`));
+
 
 
 }
+
+
+
 
 
 // document.querySelectorAll('.btn-tried').forEach(item => {

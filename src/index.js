@@ -1,24 +1,14 @@
-//GET USERS
+let Matches = []
 
-async function loadUsers() {
-    const response = await fetch("https://web2-courseproject-andyh.herokuapp.com/allUsers");
-    const users = await response.json();
-    return users;
+//create HTML with all drinks 
 
+let popIngridients = ["Strawberry", "Cherry", "Citrus", "Cloves", "Cinnamon"]
+let popDrinks = ["Gin", "Rum", "Vodka", "Scotch", "Tequila"]
+
+async function newDrink(ingredient) {
+    console.log(ingredient)
+    const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`)
+    const data = await response.json();
+    Matches = data.drinks;
 
 }
-document.addEventListener('DOMContentLoaded', async () => {
-    let users = [];
-
-    try {
-        users = await loadUsers();
-
-
-    } catch (e) {
-        console.log("Error");
-        console.log(e);
-    }
-
-    console.log(users);
-})
-

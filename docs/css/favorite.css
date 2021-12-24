@@ -1,0 +1,123 @@
+/* =================================================================
+
+FAVORITE
+
+ =================================================================*/
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+
+    /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+    flex-flow: row wrap;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+
+    padding: 0;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.flex-item {
+
+    padding: 5px;
+    width: 33%;
+    height: 250px;
+    margin-top: 50px;
+    color: white;
+
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+
+}
+
+
+
+#favoriteThumb {
+    max-height: 20%;
+    display: block;
+    /* remove extra space below image */
+}
+
+/* colum2*/
+
+#row4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#ingredients4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#ingredients4>div {
+
+
+    width: 50%;
+
+}
+
+#all1in4 {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#optionsFav {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#centerOptions>button {
+
+    border: none;
+    width: 100%;
+    align-items: center;
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    color: white;
+
+}
+
+#centerOptions {
+    text-align: center;
+}
+
+#spanName {
+    position: absolute;
+    z-index: 1;
+
+}
+
+#favouriteThumb {
+    z-index: -1;
+    position: relative;
+}
+
+.imgHolder {
+    position: relative;
+
+}
+
+.imgHolder span {
+    position: absolute;
+    left: 25%;
+    top: -45px;
+    font-size: 3em;
+}

@@ -14,13 +14,16 @@
 
 <body>
 
-    <nav class="nav_main">
-        <a id="header_el" href="./allDrinks.html">All drinks</a>
-        <a id="header_el" href="./favoriteDrinks.html">My favourite</a>
-        <a id="logo" href="./index.html"><img id="logo" src="./images/icons/Logo.png" alt="" width="80px"></a>
-        <a id="header_el" href="./about.html">About</a>
-        <a id="header_el" href="./contact.html">Contact</a>
-    </nav>
+    <header class="header">
+        <div> <a id="header_el" href="./allDrinks.html">All drinks</a> </div>
+        <div> <a id="header_el" href="./favoriteDrinks.html">My favourite</a></div>
+        <div> <a id="logo" href="./index.html"><img id="logo" src="./images/icons/Logo.png" alt="" width="80px"></a>
+        </div>
+        <div> <a id="header_el" href="./about.html">About</a> </div>
+        <div> <a id="header_el" href="./contact.html">Contact</a> </div>
+        </div>
+    </header>
+
 
     <section id="welcome_section">
 
@@ -146,10 +149,11 @@
                 <div>
                     <div class="card_content">
                         <div>
-                            Gin.png</p>
+                            Gin</p>
                         </div>
                         <div>
-                            <button id="add_button"><img src="./images/icons/cocktail.png" alt="" srcset=""></button>
+                            <button onclick=newDrink("Gin") id="add_button"><img src="./images/icons/cocktail.png"
+                                    alt="" srcset=""></button>
                         </div>
                     </div>
                 </div>
@@ -191,7 +195,7 @@
                 <div>
                     <div class="card_content">
                         <div>
-                            Scotch.png</p>
+                            Scotch</p>
                         </div>
                         <div><button id="add_button"><img src="./images/icons/cocktail.png" alt="" srcset=""></button>
                         </div>
@@ -213,11 +217,14 @@
             </div>
         </div>
 
-
+        <div id="comingSoon">
+            Function coming soon! <br>
+            Will be release in the next update.
+        </div>
 
 
     </section>
-
+    <script src="../src/index.js"></script>
 
 </body>
 

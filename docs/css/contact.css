@@ -1,0 +1,43 @@
+/* =================================================================
+
+contact
+
+ =================================================================*/
+
+#contactContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#contactContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+#contactContainer>div {
+    background-color: none;
+    width: 50%;
+}
+
+#contactImg {
+    float: right;
+}
+
+#contactText {
+    padding-left: 50px;
+}
+
+
+.containermiddle {
+
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}

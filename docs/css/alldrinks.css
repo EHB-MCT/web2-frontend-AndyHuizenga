@@ -1,0 +1,44 @@
+#headerAllDrinks {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+#headerAllDrinks>div {
+    background-color: none;
+    width: 50%;
+}
+
+#filterElements {
+    text-align: right;
+}
+
+h3 {
+    font-size: 4em;
+}
+
+.addHolder {
+    position: relative;
+}
+
+.btn {
+
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border-radius: 30px;
+    right: 10px;
+    top: 10px;
+
+}
+
+#chosenLetter {
+    background-color: rgb(107, 138, 207);
+    color: white;
+
+    border: none;
+    padding: 4px;
+}

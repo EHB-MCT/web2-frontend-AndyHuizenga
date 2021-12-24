@@ -1,0 +1,107 @@
+/* about page*/
+
+
+.aboutHolder {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+    align-items: center;
+}
+
+.aboutHolder>div {
+    width: 450px;
+    padding-right: 20px;
+    padding-left: 80px;
+}
+
+.aboutInfoL {
+    border-right: solid white 2px;
+    height: 276px;
+
+}
+
+.aboutInfoR {
+    height: 276px;
+}
+
+#about_content {
+    margin: 10% 15% auto 14%;
+    width: 1300px;
+}
+
+/* Float wrappers */
+#about_content>div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    height: 227px;
+}
+
+#float-right {
+    border-left: solid 2px white;
+    padding-left: 130px;
+    margin-left: 20px;
+}
+
+
+
+#about_content h1 {
+    margin-bottom: 20px;
+}
+
+/* =================================================================
+                                all drinks 
+================================================================*/
+
+#allDrinks {
+    margin-top: 30px;
+}
+
+
+#row4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#row4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+#row4>div {
+
+    background-color: none;
+    width: 265px;
+    padding: 10px;
+    height: 550px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.ingredientShow {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#oneDrinkImg {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    /* remove extra space below image */
+}
+
+#ingredientImg {
+    width: 80px;
+
+}
